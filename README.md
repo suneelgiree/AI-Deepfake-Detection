@@ -138,6 +138,39 @@ npm run dev
 ```
 
 ---
+---
+
+## Testing a Video Manually
+
+Once the visual branch model has been trained (see `model-training/README.md`), you can run
+the trained model on any single video file to get a real/fake prediction — useful for manual
+spot-checking or demos.
+
+### Prerequisites
+- The trained model checkpoint must exist at `model-training/checkpoints_video/best_model.pt`
+  (produced by running `train_video.py` — see `model-training/README.md`)
+- Python environment with dependencies installed (see below)
+
+### Linux / macOS
+
+```bash
+cd model-training
+source train_venv/bin/activate   # or wherever your venv lives
+python3 predict_video.py --video /path/to/your/video.mp4 --checkpoint checkpoints_video/best_model.pt
+```
+
+### Windows
+
+```powershell
+cd model-training
+train_venv\Scripts\activate
+python predict_video.py --video C:\path\to\your\video.mp4 --checkpoint checkpoints_video\best_model.pt
+```
+
+(Windows uses backslashes for paths and `python` instead of `python3` in most default installs —
+adjust if your system's Python is aliased differently.)
+
+### Example output
 
 ## Future Improvements
 
