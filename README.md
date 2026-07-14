@@ -171,3 +171,9 @@ Department of Software Engineering
 ## License
 
 This project is developed for academic and research purposes only.
+
+## Model Training
+See `model-training/README.md` for the deepfake detection model training pipeline (EfficientNet + LSTM, trained on Celeb-DF-v2, 96.94% test accuracy).
+
+## Model Training
+See `model-training/README.md` for the deepfake detection model training pipeline (EfficientNet + LSTM, trained on Celeb-DF-v2, 96.94% test accuracy).

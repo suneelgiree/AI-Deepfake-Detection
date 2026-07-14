@@ -1,0 +1,20 @@
+# Datasets (too large for git, download separately per README)
+dataset/
+celeb_df/
+frames/
+
+# Model checkpoints (large binary files)
+checkpoints/
+checkpoints_video/
+*.pt
+
+# Training artifacts
+training_curve.png
+training_curve_video.png
+extract_log.txt
+train_log.txt
+
+# Environment
+train_venv/
+__pycache__/
+*.pyc
